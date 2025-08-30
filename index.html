@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Front-end Developer" />
+    <meta
+      property="og:description"
+      content="Hello, I'm Nil Patel from India, and I'm a Front-end Developer"
+    />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="Website" />
+    <meta property="og:image" content.img src="images/pic2.png" />
+    <title>Portfolio</title>
+    <link rel="shortcut icon" href="images/favecon.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="index.html"><img src="images/logo 1.png" class="logo" /></a>
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i
+              class="fas fa-solid fa-arrow-right"
+              style="color: #fff"
+              onclick="closemenu()"
+            ></i>
+          </ul>
+          <i class="fas fa-bars" style="color: #fff" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p id="zero"><span>Hello</span> , I'm</p>
+          <h1>Nil Patel <span> From India.</span></h1>
+          <p id="first">And I'm a <span>Front-end Developer.</span></p>
+          <p id="second">
+            Frontend developer, expertise lies in crafting intuitive, responsive
+            websites with framework like React, emphasizing clean, user-friendly
+            design for seamless user experiences.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------------About-------------------->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/pic2.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p class="para">
+              Hi, I’m Nil Patel, and I'm passionate and creative Front-End Web
+              Developer with a strong foundation in HTML5, CSS3, bootstrap,
+              JavaScript, and React.js. I specialize in creating user-friendly,
+              interactive, and responsive websites that work seamlessly across
+              different devices and browsers. With React.js as my main
+              framework, I focus on building dynamic applications that provide
+              smooth navigation and engaging user interfaces.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('education')">
+                Education
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('skills')">Skills</p>
+            </div>
+            <div class="tab-contents active-tab" id="education">
+              <ul>
+                <li>
+                  <span style="font-size: 20px"
+                    >Shankersinh Vaghela Bapu Institute of Technology</span
+                  ><br />
+                  <br />
+                  B.Tech - Computer Engineering ( 2020 - 2024 )
+                </li>
+                <br />
+                <li>
+                  <span style="font-size: 20px"
+                    >Shree Sarasvati Sec.& Higher Sec. Vidhyamandir</span
+                  ><br /><br />H.S.C - 12th ( 2019 - 2020 )<br /><br />S.S.C -
+                  10th ( 2017 - 2018 )
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span style="font-size: 20px"
+                    >The Special Character PVT LTD.</span
+                  ><br /><br />Full Stack Development (Jan 2024 - May 2024)
+                </li>
+                <li>
+                  <br />
+                  <span style="font-size: 20px">Softs Solution Services</span
+                  ><br /><br />Front-end Developer ( Feb 2025 - Aug 2025 )
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="skills">
+              <ul>
+                <li>
+                  <span style="font-size: 20px">The Path of a Developer.</span
+                  ><br /><br />
+                  <ol>
+                    <li>1. HTML5</li>
+                    <li>2. CSS3</li>
+                    <li>3. JavaScript</li>
+                    <li>4. Bootstrap</li>
+                    <li>5. React.js</li>
+                    <li>6. Git</li>
+                  </ol>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------services------------------->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <!-- <i class="fa-solid fa-code"></i> -->
+            <h2>What can I do for you ?</h2>
+            <p class="my-services">
+              Faster, better products that your users love. Here's all the
+              services I provide:
+            </p>
+            <ul class="my-services-para">
+              <li>Front-end Development</li>
+              <li>Web Design</li>
+              <li>Ui/Ux Design</li>
+            </ul>
+          </div>
+          <div>
+            <!-- <i class="fa-solid fa-code"></i> -->
+            <h2>Applications I'm fluent in</h2>
+            <p class="my-services">
+              Every designer needs the right tools to do the perfect job.
+              Thankfully, I'm multilingual.
+            </p>
+            <ul class="my-services-para">
+              <li>Visual Studio Code</li>
+              <li>ReactJS</li>
+              <li>JavaScript</li>
+            </ul>
+          </div>
+          <div>
+            <!-- <i class="fa-solid fa-code"></i> -->
+            <h2>What you can expect</h2>
+            <p class="my-services">
+              I design products that are more than pretty. I make them shippable
+              and usable.
+            </p>
+            <ul class="my-services-para">
+              <li>Clean and functional</li>
+              <li>Device and user friendly</li>
+              <li>Efficient and maintainable</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------Projects----------------------->
+
+    <div id="Projects">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/E-com.jpg" />
+            <div class="layer">
+              <h3>E-commerce Website</h3>
+              <a href="https://github.com/Neelpatel-2195/e-commerce-website"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/Mynta.jpg" />
+            <div class="layer">
+              <h3>Myntra Clone Project</h3>
+              <a href="https://github.com/Neelpatel-2195/myntra-clone-project"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>School Management System</h3>
+              <a
+                href="https://github.com/Neelpatel-2195/school-management-system"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>Mini Projects</h3>
+              <a href="https://github.com/Neelpatel-2195/Mini-Projects"
+                ><i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------------contact-------------------- -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>neelpatel2982@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>9327558400</p>
+            <div class="social-icons">
+              <a href="https://facebook.com"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://twitter.com"
+                ><i class="fa-brands fa-twitter-square"></i
+              ></a>
+              <a href="https://instagram.com"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://linkedin.com"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/Nil_Resume 2.pdf" download class="btn"
+              >Downlode CV</a
+            >
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Made by Nil Patel</p>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbzWbW_YzkVvReW_pCYeJOaon0eXSacOnjNSkVTjTNdNCqWqQ_YkubUcbjndb8bNqNk8ng/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML = "Message sent successfully!";
+            setTimeout(function () {
+              msg.innerHTML = "";
+            }, 1000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
